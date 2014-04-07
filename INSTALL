@@ -1,0 +1,9 @@
+Building CandyCoin
+
+See doc/readme-qt.rst for instructions on building CandyCoin-Qt,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of CandyCoin.
+
+See doc/build-*.txt for instructions on building candycoind,
+the intended-for-services, no-graphical-interface, reference
+implementation of CandyCoin.
