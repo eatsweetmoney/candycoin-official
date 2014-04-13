@@ -54,12 +54,13 @@ grep -q "DSSL =" $source/makefile.unix
 if [ $? -eq 0 ]; then
 #already patched? update openssl path in case it's different.
 echo "Updating openssl directives in $source/makefile.unix..."
-sed -i "s|DSSL =.*|DSSL = $temp\/$openssl\/$openssl|" $source/makefile.unix
+sed -i "s|DSSL =.*|DSSL = $temp\/$openssl|" $source/makefile.unix
 else
 echo "Patching $source/makefile.unix..."
-sed -i "4aDSSL = $temp\/$openssl\/$openssl\nISSL = \$(DSSL)/include\nOPENSSL_LIB_PATH = \$(DSSL)\nOPENSSL_INCLUDE_PATH = \$(ISSL)\n" $source/makefile.unix
+sed -i "4aDSSL = $temp\/$openssl\nISSL = \$(DSSL)/include\nOPENSSL_LIB_PATH = \$(DSSL)\nOPENSSL_INCLUDE_PATH = \$(ISSL)\n" $source/makefile.unix
 fi
 
-echo "Complete. To compile candycoind:\ncd $source && make -f makefile.unix USE_UPNP=-"
+echo "Complete. To compile candycoind run the following command:"
+echo "cd $source && make -f makefile.unix USE_UPNP=-"
 fi
 
