@@ -1265,14 +1265,23 @@ unsigned int static GetNextWorkRequired(const CBlockIndex* pindexLast, const CBl
 {
         int DiffMode = 1;
         if (fTestNet) {
-                if (pindexLast->nHeight+1 >= 50) { DiffMode = 2; }
+                if (pindexLast->nHeight+1 >= 50) {
+			DiffMode = 2;
+		}
         }
         else {
-                if (pindexLast->nHeight+1 >= 400000) { DiffMode = 2; }
+                if (pindexLast->nHeight+1 >= 100000) {
+			DiffMode = 2;
+		}
         }
 
-        if                (DiffMode == 1) { return GetNextWorkRequired_V1(pindexLast, pblock); }
-        else if        (DiffMode == 2) { return GetNextWorkRequired_V2(pindexLast, pblock); }
+        if (DiffMode == 1) {
+		return GetNextWorkRequired_V1(pindexLast, pblock);
+	}
+        else if (DiffMode == 2) {
+		return GetNextWorkRequired_V2(pindexLast, pblock);
+	}
+
         return GetNextWorkRequired_V2(pindexLast, pblock);
 }
 
