@@ -1192,9 +1192,9 @@ void MapPort(bool)
 // The first name is used as information source for addrman.
 // The second name should resolve to a list of seed addresses.
 static const char *strMainNetDNSSeed[][2] = {
-    {"candyco.in","dnsseed.candyco.in"},        	//      POINTS TO MULTIPLE DNS SEEDS
-    {"dnsseed0.candyco.in","dnsseed0.candyco.in"},      //      DNSSEED: VANCOUVER, BC, CANADA
-    {"dnsseed1.candyco.in","dnsseed1.candyco.in"},      //      DNSSEED: NY, USA
+    {"candyco.in","dnsseed.candyco.in"},        	// POINTS TO MULTIPLE DNS SEEDS
+    {"dnsseed0.candyco.in","dnsseed0.candyco.in"},      // DNSSEED: VANCOUVER, BC, CANADA
+    {"dnsseed1.candyco.in","dnsseed1.candyco.in"},      // DNSSEED: NY, USA
     {NULL, NULL}
 };
 

@@ -14,7 +14,7 @@ using a public peer-to-peer network operated by volunteers.
  * 10 coins issued for each found block, halving approx every 1,051,200 blocks (~2 years)
  * approx 20.3 million coins will be issued
  * coin generation halts after 5,256,000 blocks (~10 years)
- * Kimoto Gravity Well with Timewarp patch after 100,000 blocks
+ * Kimoto Gravity Well with Timewarp patch after 100,000 blocks 
  
 License
 -------

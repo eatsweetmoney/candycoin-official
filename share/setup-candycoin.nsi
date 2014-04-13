@@ -3,6 +3,7 @@ Name CandyCoin
 RequestExecutionLevel highest
 SetCompressor /SOLID lzma
 
+
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
 !define VERSION 0.8.5.4

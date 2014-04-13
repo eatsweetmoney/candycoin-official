@@ -1281,7 +1281,6 @@ unsigned int static GetNextWorkRequired(const CBlockIndex* pindexLast, const CBl
         else if (DiffMode == 2) {
 		return GetNextWorkRequired_V2(pindexLast, pblock);
 	}
-
         return GetNextWorkRequired_V2(pindexLast, pblock);
 }
 
