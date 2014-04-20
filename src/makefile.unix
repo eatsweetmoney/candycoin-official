@@ -11,12 +11,6 @@ USE_UPNP:=0
 # :=0 --> Disable IPv6 support
 USE_IPV6:=1
 
-DSSL = /root/openssl-1.0.1f
-ISSL = $(DSSL)/include
-OPENSSL_LIB_PATH = $(DSSL)
-OPENSSL_INCLUDE_PATH = $(ISSL)
-
-
 LINK:=$(CXX)
 
 DEFS=-DBOOST_SPIRIT_THREADSAFE -D_FILE_OFFSET_BITS=64
