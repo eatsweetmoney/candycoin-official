@@ -1193,8 +1193,10 @@ void MapPort(bool)
 // The second name should resolve to a list of seed addresses.
 static const char *strMainNetDNSSeed[][2] = {
     {"candyco.in","dnsseed.candyco.in"},        	// POINTS TO MULTIPLE DNS SEEDS
-    {"dnsseed0.candyco.in","dnsseed0.candyco.in"},      // DNSSEED: VANCOUVER, BC, CANADA
-    {"dnsseed1.candyco.in","dnsseed1.candyco.in"},      // DNSSEED: NY, USA
+    {"dnsseed0.candyco.in","dnsseed0.candyco.in"},      // VANCOUVER, BC, CANADA
+    {"dnsseed1.candyco.in","dnsseed1.candyco.in"},      // NEW YORK, NY, USA
+    {"dnsseed2.candyco.in","dnsseed2.candyco.in"},	// AMSTERDAM, NL
+    {"dnsseed3.candyco.in","dnsseed3.candyco.in"},	// SINGAPORE, SG
     {NULL, NULL}
 };
 

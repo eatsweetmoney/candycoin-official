@@ -6,7 +6,7 @@ SetCompressor /SOLID lzma
 
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
-!define VERSION 0.8.5.4
+!define VERSION 0.8.5.6
 !define COMPANY "CandyCoin Foundation"
 !define URL http://www.candyco.in/
 
@@ -46,13 +46,13 @@ Var StartMenuGroup
 !insertmacro MUI_LANGUAGE English
 
 # Installer attributes
-OutFile candycoin-0.8.5.4-win32-setup.exe
+OutFile candycoin-0.8.5.6-win32-setup.exe
 InstallDir $PROGRAMFILES\CandyCoin
 CRCCheck on
 XPStyle on
 BrandingText " "
 ShowInstDetails show
-VIProductVersion 0.8.5.4
+VIProductVersion 0.8.5.6
 VIAddVersionKey ProductName CandyCoin
 VIAddVersionKey ProductVersion "${VERSION}"
 VIAddVersionKey CompanyName "${COMPANY}"
